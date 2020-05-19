@@ -7,7 +7,7 @@ const showData = async name => {
     mode: 'cors',
   });
   const data = await response.json();
-  console.log(data);
+  return data;
 };
 
 export default showData;

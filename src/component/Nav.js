@@ -3,10 +3,8 @@ import React from 'react';
 import {
   Link,
 } from 'react-router-dom';
-import showData from '../helper/showData';
 
 export default function Nav() {
-  showData('How I met your Mother');
   return (
     <div>
       <form>
