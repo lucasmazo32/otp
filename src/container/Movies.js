@@ -29,7 +29,7 @@ function Movies({
   }, [addOption, clearOptions, changeFilter]);
 
   return (
-    <div className="container-xl movie-container">
+    <div className="container-xl movie-container cont-b">
       { showFilter(filter, shows) }
     </div>
   );

@@ -29,7 +29,7 @@ function Movie({ addFavorite, removeFavorite, favorites }) {
   };
 
   return (
-    <div className="container-xl">
+    <div className="container-xl cont-b">
       <h2>{ movie.Title }</h2>
       <img src={movie.Poster} alt={`${movie.Title} poster`} />
       <p>{`Plot: ${movie.Plot}`}</p>

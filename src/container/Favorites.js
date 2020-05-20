@@ -24,10 +24,10 @@ function Favorites({
     clearOptions();
     changeFilter('All');
     allGenres(showList, addOption);
-  }, [favorites]);
+  }, [favorites, addOption, clearOptions, changeFilter]);
 
   return (
-    <div className="container-xl movie-container">
+    <div className="container-xl movie-container cont-b">
       { showFilter(filter, shows) }
     </div>
   );

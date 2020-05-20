@@ -1,0 +1,37 @@
+footer {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  justify-content: center;
+  background-color: lightgrey;
+  margin-top: 10px;
+  padding: 5px 0;
+}
+
+footer i {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+}
+
+a:first-of-type {
+  margin-right: 20px;
+}
+
+footer svg {
+  height: 25px;
+}
+
+footer span {
+  position: relative;
+  top: 2px;
+  line-height: 1;
+  margin-left: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    display: none;
+  }
+}

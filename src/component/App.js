@@ -9,6 +9,8 @@ import MovieInfo from './MovieInfo';
 import Nav from './Nav';
 import Movies from '../container/Movies';
 import Favorites from '../container/Favorites';
+import Footer from './Footer';
+import '../assets/style/app.css';
 
 function App() {
   const [favorites, setFavorites] = useState(localStorage.getItem('favorites') !== '' && localStorage.getItem('favorites') !== null ? localStorage.getItem('favorites').split(',') : []);
@@ -35,6 +37,7 @@ function App() {
           <MovieInfo favorites={favorites} addFavorite={id => addFav(id)} removeFavorite={id => remFav(id)} />
         </Route>
       </Switch>
+      <Footer />
     </Router>
   );
 }

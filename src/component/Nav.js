@@ -18,6 +18,7 @@ function Nav({ options, changeFilter }) {
   const handleSubmit = e => {
     e.preventDefault();
     const movie = showData(e.target[1].value);
+    e.target[1].value = '';
     movie.then(movie => {
       if (movie.Response === 'True') {
         history.push(`/${movie.imdbID}`);
@@ -35,10 +36,10 @@ function Nav({ options, changeFilter }) {
         <select onChange={handleChange}>
           { options.map(result => <option key={result}>{result}</option>) }
         </select>
-        <input type="text" />
+        <input type="text" placeholder="Movie/Series name..." />
       </form>
-      <Link to="/">Home</Link>
-      <Link to="/favorites">Favorites</Link>
+      <Link className="nav-links" to="/">Home</Link>
+      <Link className="nav-links" to="/favorites">Favorites</Link>
     </nav>
   );
 }
