@@ -10,7 +10,9 @@ import '../assets/style/movies.css';
 
 const { addOption, clearOptions, changeFilter } = actions;
 
-function Movies({ addOption, clearOptions, filter, changeFilter }) {
+function Movies({
+  addOption, clearOptions, filter, changeFilter,
+}) {
   const [shows, setShows] = useState([]);
 
   useEffect(() => {

@@ -45,16 +45,14 @@ function Nav({ options, changeFilter }) {
 Nav.propTypes = {
   options: PropTypes.arrayOf(PropTypes.string).isRequired,
   changeFilter: PropTypes.func.isRequired,
-  filter: PropTypes.string.isRequired,
 };
 
 const mapDispatchToProps = dispatch => ({
   changeFilter: filter => dispatch(changeFilter(filter)),
 });
 
-const mapStateToProps = ({ optionsReducer: options, filterReducer: filter }) => ({
+const mapStateToProps = ({ optionsReducer: options }) => ({
   options,
-  filter,
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Nav);
