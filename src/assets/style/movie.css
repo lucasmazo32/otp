@@ -7,7 +7,7 @@
   flex-basis: 50%;
 }
 
-span {
+.movie span {
   position: absolute;
   bottom: 0;
   left: 0;

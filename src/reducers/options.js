@@ -3,7 +3,7 @@ import actions from '../actions/index';
 const { action } = actions;
 const { ADD_OPTION, CLEAR_OPTIONS } = action;
 
-const filterReducer = (state = ['All'], action) => {
+const optionsReducer = (state = ['All'], action) => {
   switch (action.type) {
     case ADD_OPTION:
       return [...state, action.payload];
@@ -14,4 +14,4 @@ const filterReducer = (state = ['All'], action) => {
   }
 };
 
-export default filterReducer;
+export default optionsReducer;

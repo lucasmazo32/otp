@@ -6,6 +6,7 @@ import homeShows from '../helper/homeShows';
 import Movie from '../component/Movie';
 import actions from '../actions/index';
 import allGenres from '../helper/allGenres';
+import showData from '../helper/showData';
 import '../assets/style/movies.css';
 
 const { addOption, clearOptions, changeFilter } = actions;
@@ -16,7 +17,7 @@ function Movies({
   const [shows, setShows] = useState([]);
 
   useEffect(() => {
-    const showList = homeShows();
+    const showList = homeShows(showData);
     Object.keys(showList).forEach(show => {
       showList[show].then(result => {
         setShows(shows => [...shows, result]);

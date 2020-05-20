@@ -38,6 +38,7 @@ function Nav({ options, changeFilter }) {
         <input type="text" />
       </form>
       <Link to="/">Home</Link>
+      <Link to="/favorites">Favorites</Link>
     </nav>
   );
 }
