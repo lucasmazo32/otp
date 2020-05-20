@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+/* eslint-disable max-len */
+import React, { useState } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
@@ -19,10 +20,6 @@ function App() {
   const remFav = id => {
     setFavorites(favorites => favorites.filter(favorite => favorite !== id));
   };
-
-  useEffect(() => {
-    console.log(favorites);
-  }, [favorites]);
 
   return (
     <Router>

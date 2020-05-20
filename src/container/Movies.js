@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import homeShows from '../helper/homeShows';
-import Movie from '../component/Movie';
+import showFilter from '../helper/filterHelper';
 import actions from '../actions/index';
 import allGenres from '../helper/allGenres';
 import showData from '../helper/showData';
@@ -28,21 +28,9 @@ function Movies({
     allGenres(showList, addOption);
   }, [addOption, clearOptions, changeFilter]);
 
-  const showFilter = () => {
-    if (filter === 'All') {
-      return shows.map(show => <Movie key={show.imdbID} title={show.Title} image={show.Poster} movieID={show.imdbID} />);
-    }
-    return shows.map(show => {
-      if (show.Genre.split(', ').includes(filter)) {
-        return <Movie key={show.imdbID} title={show.Title} image={show.Poster} movieID={show.imdbID} />;
-      }
-      return null;
-    });
-  };
-
   return (
     <div className="container-xl movie-container">
-      { showFilter() }
+      { showFilter(filter, shows) }
     </div>
   );
 }
