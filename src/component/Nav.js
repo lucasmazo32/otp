@@ -4,10 +4,15 @@ import {
   Link,
   useHistory,
 } from 'react-router-dom';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import showData from '../helper/showData';
+import actions from '../actions/index';
 import '../assets/style/nav.css';
 
-export default function Nav() {
+const { changeFilter } = actions;
+
+function Nav({ options, changeFilter }) {
   const history = useHistory();
 
   const handleSubmit = e => {
@@ -20,12 +25,15 @@ export default function Nav() {
     });
   };
 
+  const handleChange = e => {
+    changeFilter(e.target.value);
+  };
+
   return (
     <nav>
       <form onSubmit={handleSubmit}>
-        <select>
-          <option>Comedy</option>
-          <option>Romance</option>
+        <select onChange={handleChange}>
+          { options.map(result => <option key={result}>{result}</option>) }
         </select>
         <input type="text" />
       </form>
@@ -33,3 +41,20 @@ export default function Nav() {
     </nav>
   );
 }
+
+Nav.propTypes = {
+  options: PropTypes.arrayOf(PropTypes.string).isRequired,
+  changeFilter: PropTypes.func.isRequired,
+  filter: PropTypes.string.isRequired,
+};
+
+const mapDispatchToProps = dispatch => ({
+  changeFilter: filter => dispatch(changeFilter(filter)),
+});
+
+const mapStateToProps = ({ optionsReducer: options, filterReducer: filter }) => ({
+  options,
+  filter,
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Nav);

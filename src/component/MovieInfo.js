@@ -12,6 +12,7 @@ export default function Movie() {
     const movieInfo = showDataById(id);
     movieInfo.then(result => setMovie(result));
   }, [id]);
+
   return (
     <div className="container-xl">
       <h2>{ movie.Title }</h2>

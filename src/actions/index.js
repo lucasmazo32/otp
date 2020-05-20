@@ -1,5 +1,7 @@
 const action = {
   CHANGE_FILTER: 'CHANGE_FILTER',
+  ADD_OPTION: 'ADD_OPTION',
+  CLEAR_OPTIONS: 'CLEAR_OPTIONS',
 };
 
 const changeFilter = filter => ({
@@ -7,6 +9,15 @@ const changeFilter = filter => ({
   payload: filter,
 });
 
+const addOption = option => ({
+  type: action.ADD_OPTION,
+  payload: option,
+});
+
+const clearOptions = () => ({
+  type: action.CLEAR_OPTIONS,
+});
+
 export default {
-  action, changeFilter,
+  action, changeFilter, addOption, clearOptions,
 };
