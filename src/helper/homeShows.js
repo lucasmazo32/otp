@@ -7,7 +7,7 @@ const homeShows = () => {
   shows.forEach(show => {
     showList[show] = showData(show);
   });
-  console.log(showList);
+  return showList;
 };
 
 export default homeShows;

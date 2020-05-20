@@ -4,9 +4,9 @@ import {
   Switch,
   Route,
 } from 'react-router-dom';
-import Movie from './Movie';
+import MovieInfo from './MovieInfo';
 import Nav from './Nav';
-import Movies from './Movies';
+import Movies from '../container/Movies';
 
 export default function App() {
   return (
@@ -17,7 +17,7 @@ export default function App() {
           <Movies />
         </Route>
         <Route path="/:id">
-          <Movie />
+          <MovieInfo />
         </Route>
       </Switch>
     </Router>
