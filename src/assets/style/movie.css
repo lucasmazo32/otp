@@ -1,9 +1,10 @@
 .movie {
   position: relative;
-  padding-bottom: 30%;
+  padding-bottom: 80%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  flex-basis: 50%;
 }
 
 span {
@@ -18,5 +19,6 @@ span {
 @media screen and (min-width: 992px) {
   .movie {
     flex-basis: 20%;
+    padding-bottom: 30%;
   }
 }
