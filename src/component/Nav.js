@@ -8,6 +8,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import showData from '../helper/showData';
 import actions from '../actions/index';
+import logo from '../assets/images/circle-logo.png';
 import '../assets/style/nav.css';
 
 const { changeFilter } = actions;
@@ -32,11 +33,12 @@ function Nav({ options, changeFilter }) {
 
   return (
     <nav>
+      <img src={logo} alt="OneTrick Ponny logo" />
       <form onSubmit={handleSubmit}>
         <select onChange={handleChange}>
           { options.map(result => <option key={result}>{result}</option>) }
         </select>
-        <input type="text" placeholder="Movie/Series name..." />
+        <input required type="text" placeholder="Movie/Series name..." />
       </form>
       <Link className="nav-links" to="/">Home</Link>
       <Link className="nav-links" to="/favorites">Favorites</Link>

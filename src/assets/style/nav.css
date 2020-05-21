@@ -1,11 +1,26 @@
 nav {
+  background-color: #303841;
+  padding: 5px 0;
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
 }
 
+nav img {
+  height: 30px;
+  margin-right: 20px;
+}
+
 nav select {
   height: 100%;
+}
+
+.nav-links {
+  color: white;
+}
+
+.nav-links:hover {
+  color: white;
 }
 
 .nav-links:first-of-type {
@@ -14,6 +29,9 @@ nav select {
 
 @media screen and (max-width: 768px) {
   .nav-links {
+    display: none;
+  }
+  nav img {
     display: none;
   }
 }
