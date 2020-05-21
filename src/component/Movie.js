@@ -13,7 +13,7 @@ export default function Movie({ title, image, movieID }) {
   };
 
   return (
-    <button className="movie" onClick={handleClick} type="button" style={{backgroundImage: `url(${image})`}}>
+    <button className="movie" onClick={handleClick} type="button" style={{ backgroundImage: `url(${image})` }}>
       <span>{ title }</span>
     </button>
   );
