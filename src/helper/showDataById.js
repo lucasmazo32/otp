@@ -1,5 +1,7 @@
+import apikey from './apiKey';
+
 const showDataByID = async id => {
-  const response = await fetch(`https://www.omdbapi.com/?apikey=da6bdfda&i=${id}`, {
+  const response = await fetch(`https://www.omdbapi.com/?apikey=${apikey}&i=${id}`, {
     method: 'GET',
     mode: 'cors',
   });
