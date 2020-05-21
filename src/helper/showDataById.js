@@ -1,5 +1,5 @@
 const showDataByID = async id => {
-  const response = await fetch(`http://www.omdbapi.com/?apikey=da6bdfda&i=${id}`, {
+  const response = await fetch(`https://www.omdbapi.com/?apikey=da6bdfda&i=${id}`, {
     method: 'GET',
     mode: 'cors',
   });

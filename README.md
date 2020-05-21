@@ -29,7 +29,7 @@
 
 To get a local copy up and running follow these simple steps.
 
-Clone or fork the [repository](https://github.com/lucasmazo32/otp).
+Clone or fork the [repository](https://5ec6d65e060eac840e83bba6--naughty-euler-862f81.netlify.app/).
 
 ### `npm start`
 
