@@ -1,0 +1,11 @@
+#favorite {
+  display: none;
+}
+
+#favorite:checked + label {
+  color: rgb(202, 202, 0);
+}
+
+svg {
+  height: 20px;
+}

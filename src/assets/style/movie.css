@@ -1,0 +1,31 @@
+.movie {
+  position: relative;
+  padding-bottom: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  flex-basis: 33.33333%;
+}
+
+.movie span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  padding: 2px;
+  border-top-right-radius: 5px;
+}
+
+@media screen and (min-width: 992px) {
+  .movie {
+    flex-basis: 20%;
+    padding-bottom: 30%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .movie {
+    flex-basis: 50%;
+    padding-bottom: 80%;
+  }
+}
