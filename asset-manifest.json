@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/otp/static/css/main.20dc9832.chunk.css",
+    "main.js": "/otp/static/js/main.98a8e31c.chunk.js",
+    "main.js.map": "/otp/static/js/main.98a8e31c.chunk.js.map",
+    "runtime-main.js": "/otp/static/js/runtime-main.bc4279dc.js",
+    "runtime-main.js.map": "/otp/static/js/runtime-main.bc4279dc.js.map",
+    "static/js/2.ed2444c5.chunk.js": "/otp/static/js/2.ed2444c5.chunk.js",
+    "static/js/2.ed2444c5.chunk.js.map": "/otp/static/js/2.ed2444c5.chunk.js.map",
+    "index.html": "/otp/index.html",
+    "precache-manifest.450d787d03603a3e43f033daa1bfe22d.js": "/otp/precache-manifest.450d787d03603a3e43f033daa1bfe22d.js",
+    "service-worker.js": "/otp/service-worker.js",
+    "static/css/main.20dc9832.chunk.css.map": "/otp/static/css/main.20dc9832.chunk.css.map",
+    "static/js/2.ed2444c5.chunk.js.LICENSE.txt": "/otp/static/js/2.ed2444c5.chunk.js.LICENSE.txt",
+    "static/media/circle-logo.png": "/otp/static/media/circle-logo.cdee11cd.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bc4279dc.js",
+    "static/js/2.ed2444c5.chunk.js",
+    "static/css/main.20dc9832.chunk.css",
+    "static/js/main.98a8e31c.chunk.js"
+  ]
+}
